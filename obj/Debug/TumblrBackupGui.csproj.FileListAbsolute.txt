@@ -1,0 +1,10 @@
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\bin\Debug\TumblrBackupGui.exe.config
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\bin\Debug\TumblrBackupGui.exe
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\bin\Debug\TumblrBackupGui.pdb
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.MainForm.resources
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.Properties.Resources.resources
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.csproj.GenerateResource.cache
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.csproj.CoreCompileInputs.cache
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.exe
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.pdb
+C:\Chris\CodingProjects\C#\TumblrBackup\TumblrBackupGui\TumblrBackupGui\obj\Debug\TumblrBackupGui.csprojAssemblyReference.cache

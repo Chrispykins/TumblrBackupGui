@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="Resources/book.ico" />
+		<style>
+
+			body {
+				background-color: rgb(72, 83, 108);
+				color: white;
+			}
+
+			h1 {
+				margin-left: 10px;
+				text-shadow: -3px 3px 1px #333;
+				display: inline-block;
+			}
+
+			body > p {
+				margin-left: 10px;
+				font: 17px Times;
+			}
+
+			a:link {
+				color: #FFA07A;
+			}
+
+			a:visited {
+				color: #0080AA;
+			}
+
+			a:hover {
+				color: #FFB0AA;
+			}
+
+			a:active {
+				color: white;
+			}
+
+			.code {
+				background-color: #aaa;
+				color: black;
+				font: 15px Courier;
+				margin-left: 10px;
+				padding: 15px;
+				display: inline-block;
+			}
+
+			#book {
+				width: 50px;
+				height: 50px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<image id='book' src='Resources/book.png' /><h1>Tumblr Backup (Windows only)</h1>
+		<hr>
+
+		<p>Thank you for using the Tumblr Backup GUI!<p>
+		<p>All the credit for this utility goes to <a href="https://github.com/bbolli">bbolli</a> for creating the <a href="https://github.com/bbolli/tumblr-utils">tumblr_backup</a> Python script which does the heavy lifting. All I did was package it up for ease of use.</p><br>
+
+		<p>This script downloads and archives multiple blogs and outputs the results in the desired folder. Each blog gets it's own folder inside the destination folder.</p>
+		<p>I put this together over a couple of days, and I can't guarantee it's bug free. If the GUI is not working for you, you can still use bbolli's original script in the tumblr_backup directory via the windows command line.</p>
+		<p>I've included a copy of Python in the directory, so if you don't have it or don't know how to install it, don't worry, it's taken care of. You can open the command prompt by holding shift and right clicking the directory, then selecting 'open command window here'.</p>
+		<p>Enter the following command to run the script:</p>
+		<div class='code'>
+			tumblr_backup.exe blog-name blog-name blog-name ... etc.
+		</div>
+		<br>
+		<p>There are actually many things that the original Python script can do, which are not available in the simplified GUI interface.</p><p>If you're interested I recommend checking out the <a href="https://github.com/bbolli/tumblr-utils/blob/master/tumblr_backup.md">readme</a> for that script on GitHub to find out all the different options which are available.</p>
+		<br>
+		<p>This software is distributed under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPL3</a> license. Source code for the GUI application is available on GitHub <a href="">here</a>. Bbolli's Python script is available on his GitHub as well.
+	</body>
+</html>
