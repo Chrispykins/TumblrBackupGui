@@ -29,13 +29,20 @@ namespace TumblrBackupGui
             //load fonts
             PrivateFontCollection fontCollection = new PrivateFontCollection();
 
-            fontCollection.AddFontFile(@"Resources\GenBasB.ttf");
-            fontCollection.AddFontFile(@"Resources\GenBasR.ttf");
+            try
+            {
+                fontCollection.AddFontFile(@"Resources\GenBasB.ttf");
+                fontCollection.AddFontFile(@"Resources\GenBasR.ttf");
 
-            //set fonts
-            DownloadButton.Font = new Font((FontFamily)fontCollection.Families.GetValue(0), 14.0f);
-            label1.Font         = new Font((FontFamily)fontCollection.Families.GetValue(0), 12.0f);
-            groupBox1.Font      = new Font((FontFamily)fontCollection.Families.GetValue(0), 12.0f);
+                //set fonts
+                DownloadButton.Font = new Font((FontFamily)fontCollection.Families.GetValue(0), 14.0f);
+                label1.Font = new Font((FontFamily)fontCollection.Families.GetValue(0), 12.0f);
+                groupBox1.Font = new Font((FontFamily)fontCollection.Families.GetValue(0), 12.0f);
+            }
+            catch
+            {
+                //font file has been lost, we'll just use the default fonts.
+            }
 
             //output folder setup
             OutputFolderText.Text = AppDomain.CurrentDomain.BaseDirectory;
@@ -205,16 +212,29 @@ namespace TumblrBackupGui
                 Directory.CreateDirectory(outputPath);
             }
 
+            //if there were any valid blog-names at all
             if (names.Length > 0)
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo()
+                Process process = new Process
                 {
-                    WorkingDirectory = @outputPath,
-                    FileName = AppDomain.CurrentDomain.BaseDirectory + "tumblr_backup/tumblr_backup.exe ",
-                    Arguments = @names
+                    StartInfo = {
+                        WorkingDirectory = @outputPath,
+                        FileName = AppDomain.CurrentDomain.BaseDirectory + "tumblr_backup/tumblr_backup.exe ",
+                        Arguments = @names
+                    }
                 };
 
-                Process.Start(startInfo);
+                try
+                {
+                    process.Start();
+                }
+                catch (Exception err)
+                {
+                    ErrorText.Text += "Couldn't run tumblr_backup.exe!\nAre all files and folders extracted? Is the tumblr_backup folder in the same folder as this application?\n";
+                    process.Dispose();
+                }
+
+                process.Dispose();
             }
         }
     }

@@ -88,7 +88,7 @@
             // 
             // DownloadButton
             // 
-            this.DownloadButton.Font = new System.Drawing.Font("GENUINE", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.DownloadButton.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownloadButton.ForeColor = System.Drawing.Color.Black;
             this.DownloadButton.Location = new System.Drawing.Point(542, 488);
             this.DownloadButton.Name = "DownloadButton";
@@ -104,6 +104,7 @@
             this.ErrorText.Font = new System.Drawing.Font("Gentium Basic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorText.ForeColor = System.Drawing.Color.LightSalmon;
             this.ErrorText.Location = new System.Drawing.Point(15, 439);
+            this.ErrorText.MaximumSize = new System.Drawing.Size(500, 0);
             this.ErrorText.Name = "ErrorText";
             this.ErrorText.Size = new System.Drawing.Size(0, 23);
             this.ErrorText.TabIndex = 7;
